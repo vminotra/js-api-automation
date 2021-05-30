@@ -1,0 +1,26 @@
+{
+    "create_snippet_body" : {
+        "language": "python", 
+        "title": "test", 
+        "public": true, 
+        "files": [{
+            "name": "vikrant.py", 
+            "content": "print('vikrant')"
+            }]
+    },
+
+    "headers" : {
+        "Content-type": "application/json"
+    },
+
+    "token_pair": {
+        "username": "your-username-here",
+        "auth_token": "Token your-user-api-token-here"
+    },
+
+    "list_snippets_params" : {
+        "page": 1,
+        "per_page": 5
+    }
+
+}
