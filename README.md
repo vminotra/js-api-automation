@@ -16,6 +16,6 @@ npm run test
 ```
 
 TO-DO list:
-- [ ] Fix the scenarios for *update snippet* and *delete snippet* endpoints
-- [ ] Add scenarios for the *execute snippet* endpoint
+- [x] Fix the scenarios for *update snippet* and *delete snippet* endpoints
+- [x] Add scenarios for the *execute snippet* endpoint
 - [ ] Add report generation to the framework
