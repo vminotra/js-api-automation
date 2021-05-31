@@ -36,7 +36,6 @@ Given("I update the newly created snippet", async () => {
 
 Then("the snippet should contain the updated contents", async () => {
 
-    assert.notDeepEqual(create_snippet_body.files, updateAPIResponse.files, 'No change in file contents before and after update');
     assert.equal(updatedRequestBody.title, updateAPIResponse.title, 'Title of snippet does not match value passed to update API');
     assert.deepEqual(updatedRequestBody.files, updateAPIResponse.files, 'Returned file contents do not match values passed to update API');
 
@@ -46,7 +45,6 @@ Given("I delete the created snippet", async () => {
 
     const response = await apiCall.deleteRequest(returnedSnippet.url, authHeaders);
     deleteResponse = response;
-    // assert.deepEqual(deleteResponse, {}, 'Delete request returned a non-empty body')
 
 });
 

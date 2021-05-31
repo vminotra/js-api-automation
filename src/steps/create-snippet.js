@@ -40,7 +40,6 @@ When("I create a new snippet using an existing auth token", async () => {
     authHeaders["Authorization"] = token_pair.auth_token;
     const response = await apiCall.postRequest(endPointUrl, authHeaders, create_snippet_body);
     returnedSnippet = response.body;
-    // console.log(response.body);
     assert.equal(response.statusCode, 200, 'Create API request returned a status code other than 200') 
 
 });
@@ -49,7 +48,6 @@ Given("I list the snippets of the user corresponding to the auth token", async (
 
     const userSnippetsUrl = `${baseUrl}${snippet}?owner=${token_pair.username}`;
     userSnippetsResponse = await apiCall.getRequest(userSnippetsUrl, headers);
-    // console.log(userSnippetsResponse.body);
     assert.equal(userSnippetsResponse.statusCode, 200, 'List snippets API request returned a status code other than 200')
 
 });

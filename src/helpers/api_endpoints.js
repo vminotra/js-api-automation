@@ -1,3 +1,4 @@
 export const baseUrl = "https://glot.io/";
 export const snippet = "api/snippets";
-export const runSnippet  = "api/run";
+export const runSnippet  = "api/run/";
+export const latestPython = "python/latest";

@@ -2,7 +2,7 @@
     "create_snippet_body" : {
         "language": "python", 
         "title": "test", 
-        "public": true, 
+        "public": false, 
         "files": [{
             "name": "vikrant.py", 
             "content": "print('vikrant')"
@@ -18,9 +18,16 @@
         "auth_token": "Token your-user-api-token-here"
     },
 
-    "list_snippets_params" : {
+    "list_snippets_params": {
         "page": 1,
         "per_page": 5
-    }
+    },
+
+    "expected_execution_output": {
+            "stdout": "0\n1\n2\n3\n4\n5\n6\n7\n8\nNone\n",
+            "stderr": "",
+            "error": ""
+    },
+    "execution_snippet": "fz479xjw9j"
 
 }
